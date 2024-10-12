@@ -1,0 +1,400 @@
+!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Martha Lizardo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Martliz</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="./assets/img/mifoto.webp" alt="">
+            </div>
+            <h1>Martha Lizardo Álvarez<h1>
+            <h2>Tecnico Superior en Informática  Experto UI/UX</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Martha Lizardo Álvarez.</span> Una profesional en Informática con un enfoque integral en auditoría de sistemas TI e implementación de soluciones informáticas. He acumulado experiencia significativa en Teleperformance Chile, donde he desempeñado roles clave en la gestión de calidad, capacitación y atención al cliente. Mi enfoque está orientado hacia la eficiencia operativa y la mejora continua en todas las áreas en las que participo.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +56 958836085
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            martlizg@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.martliz.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Santiago. Chile
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Quality Analyst/FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-paw"></i>
+                            <span>PET LOVER</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-pen-nib"></i>
+                            <span>LETTERING</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Analisis de Datos</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Css</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Excel Avanzado</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>TSU en Informática</h4>
+                        <span class="casa">Técnico Superior en Informática</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>me ha permitido adquirir conocimientos en diversas áreas de la tecnología. Durante mi formación, aprendí a desarrollar y mantener sistemas informáticos, así como a gestionar bases de datos y redes. Además, he trabajado en la implementación de soluciones tecnológicas, enfocándome en la mejora continua y la eficiencia operativa. Mi experiencia en auditoría de sistemas me ha proporcionado habilidades para analizar y optimizar procesos, siempre buscando la excelencia en la atención al cliente.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>DESARROLLADOR DE APLICACIONES FRONT-END TRAINEE</h4>
+                        <span class="casa">SENCE</span>
+                        <span class="fecha">2021</span>
+                        <p>Durante mi formación como Desarrollador de Aplicaciones Front-End Trainee en el programa de Becas Laborales Capacitación para el Trabajo OTIC, adquirí conocimientos fundamentales en el desarrollo de interfaces web efectivas y atractivas. Este curso, impartido por Linares y Moreira Ltda. en Valparaíso, me permitió profundizar en tecnologías clave como HTML, CSS y JavaScript, además de aprender sobre herramientas y prácticas actuales en el desarrollo front-end. La capacitación constó de 438 horas de estudio, donde mantuve una asistencia del 100%. Esta experiencia me ha proporcionado una base sólida para contribuir en el campo del desarrollo web y seguir mejorando mis habilidades.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>ANÁLISIS DE DATOS</h4>
+                        <span class="casa">SENCE</span>
+                        <span class="fecha">2022</span>
+                        <p>Durante mi formación en el curso de Análisis de Datos en la institución Sustantiva SpA, tuve la oportunidad de profundizar en técnicas y herramientas esenciales para la recolección, procesamiento y análisis de datos. Este curso, que abarcó un total de 164 horas con asistencia del 100%, me permitió desarrollar habilidades en el manejo de software de análisis y visualización de datos, así como en la interpretación de resultados para la toma de decisiones informadas. Este conocimiento es fundamental en un mundo donde los datos son un recurso clave para impulsar la innovación y la eficiencia en cualquier sector. Estoy entusiasmada por aplicar estas habilidades en proyectos futuros y contribuir al éxito organizacional a través del análisis estratégico de datos.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Coordinador de Capacitación y Calidad</h4>
+                        <span class="casa">TELEPERFORMANCE</span>
+                        <span class="fecha">2024 - Actual</span>
+                        <p>En la campaña Walmart, actualmente me desempeño en el departamento de training, donde me enfoco en mejorar los conocimientos de los procesos de la campaña. A su vez, realizo el Quality Assurance, analizando el desempeño de los ejecutivos para optimizar sus KPIs y asegurar un alto estándar de calidad. Trabajo en equipo para integrar nuevas olas (waves) y levanto reportes desde Salesforce, contribuyendo a la mejora continua de la operación y al reconocimiento del excelente desempeño del equipo.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Quality Assurance</h4>
+                        <span class="casa">TELEPERFORMANCE</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>En mi rol como Quality Assurance en la campaña Walmart, trabajé durante un año analizando el desempeño de los ejecutivos de atención al cliente con el objetivo de mejorar sus KPIs. Mi labor consistió en la evaluación continua de llamadas y el desarrollo de informes detallados que identificaban áreas de mejora, proporcionando retroalimentación constructiva y recomendaciones específicas. Gracias a mis esfuerzos y a la implementación de estrategias de capacitación, logramos un notable aumento en la calidad del servicio y en la satisfacción del cliente, lo que me valió un excelente reconocimiento por parte de la gerencia.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Ejecutiva de Back Office</h4>
+                        <span class="casa">TELEPERFORMANCE</span>
+                        <span class="fecha">2021 - 2022</span>
+                        <p>Como Ejecutiva de Back Office en la campaña Walmart, desempeñé un papel crucial en el soporte administrativo y operativo, asegurando el flujo eficiente de información entre los departamentos. Mis responsabilidades incluían la gestión y análisis de datos relacionados con las ventas y el inventario, así como la resolución de incidencias y la atención a consultas de los clientes a través de plataformas internas. También colaboré en la generación de informes para la toma de decisiones, facilitando el cumplimiento de los estándares de calidad y eficiencia establecidos por Walmart. Este rol me permitió fortalecer mis habilidades organizativas y de comunicación, así como adquirir un conocimiento profundo sobre las operaciones del sector retail.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="https://github.com/Martliz/Desafio_Barbershop.git">
+                            <img src="./assets/img/BarberShop-proyecto1.png" class="d-block w-100" alt="BarberShop Proyecto">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://github.com/Martliz/Animales-Salvajes.git">
+                            <img src="./assets/img/anilamesSalvajes.png" class="d-block w-100" alt="Diseño Creativo">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://github.com/Martliz/Potafolio.git">
+                            <img src="./assets/img/portafolio.png" class="d-block w-100" alt="Diseño Creativo">
+                        </a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre" required>
+                    <input type="tel" placeholder="Número telefónico" pattern="[0-9]{10}" required>
+                    <input type="email" placeholder="Dirección de correo" required>
+                    <input type="text" placeholder="Tema" required>
+                    <textarea cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                    <button type="button" onclick="validarFormulario()">
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Santiago, Chile
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: +56958836085 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: matlizg@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <div class="iconos">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
+         </div>        
+         <div>
+           2024 Martha Lizardo. Todos los derechos reservados.</div>
+         </div>
+    </footer>
+    
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
